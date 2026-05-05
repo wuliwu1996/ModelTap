@@ -1,0 +1,137 @@
+[
+  {
+    "id": "cn_deepseek",
+    "name": "DeepSeek",
+    "url": "https://chat.deepseek.com/",
+    "info": "深度思考与通用问答",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 1
+  },
+  {
+    "id": "cn_qwen",
+    "name": "千问",
+    "url": "https://chat.qwen.ai/",
+    "info": "阿里通义千问",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 2
+  },
+  {
+    "id": "cn_minimax",
+    "name": "MiniMax",
+    "url": "https://agent.minimaxi.com/",
+    "info": "支持 Agent 与多任务助手",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 3
+  },
+  {
+    "id": "cn_zai",
+    "name": "Z.ai",
+    "url": "https://chat.z.ai/",
+    "info": "GLM 系列智能助手",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 4
+  },
+  {
+    "id": "cn_kimi",
+    "name": "KIMI",
+    "url": "https://www.kimi.com/",
+    "info": "Moonshot 智能助手",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 5
+  },
+  {
+    "id": "cn_metaso",
+    "name": "秘塔AI",
+    "url": "https://metaso.cn/",
+    "info": "AI 搜索与研究",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 6
+  },
+  {
+    "id": "cn_doubao",
+    "name": "豆包",
+    "url": "https://www.doubao.com/chat/",
+    "info": "字节系 AI 助手",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 7
+  },
+  {
+    "id": "cn_yiyan",
+    "name": "文心一言",
+    "url": "https://yiyan.baidu.com/",
+    "info": "百度大模型对话助手",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 8
+  },
+  {
+    "id": "cn_chatglm",
+    "name": "智谱清言",
+    "url": "https://chatglm.cn/",
+    "info": "智谱 AI 对话产品",
+    "region": "国内",
+    "isBuiltin": true,
+    "order": 9
+  },
+  {
+    "id": "global_chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com/",
+    "info": "OpenAI 对话助手",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 101
+  },
+  {
+    "id": "global_grok",
+    "name": "Grok",
+    "url": "https://grok.com/",
+    "info": "xAI 智能助手",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 102
+  },
+  {
+    "id": "global_gemini",
+    "name": "Gemini",
+    "url": "https://gemini.google.com/app",
+    "info": "Google AI 助手",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 103
+  },
+  {
+    "id": "global_claude",
+    "name": "Claude",
+    "url": "https://claude.ai/",
+    "info": "Anthropic 智能助手",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 104
+  },
+  {
+    "id": "global_perplexity",
+    "name": "Perplexity",
+    "url": "https://www.perplexity.ai/",
+    "info": "AI 搜索与问答",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 105
+  },
+  {
+    "id": "global_copilot",
+    "name": "Copilot",
+    "url": "https://copilot.microsoft.com/",
+    "info": "Microsoft AI 助手",
+    "region": "国外",
+    "isBuiltin": true,
+    "order": 106
+  }
+]

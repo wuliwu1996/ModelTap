@@ -1,0 +1,108 @@
+{
+  "name": "ModelTap",
+  "version": "1.0.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:start": "npm run build && electron .",
+    "build:electron": "npm run build && electron-builder --win nsis",
+    "build:electron:mac": "npm run build && electron-builder --mac dmg zip",
+    "build:electron:mac:arm64": "npm run build && electron-builder --mac dmg zip --arm64",
+    "pack:electron": "npm run build && electron-builder --dir"
+  },
+  "dependencies": {
+    "core-js": "^3.49.0",
+    "dompurify": "^3.4.1",
+    "mammoth": "^1.12.0",
+    "markdown-it": "^14.1.1",
+    "pdfjs-dist": "^3.11.174",
+    "regenerator-runtime": "^0.14.1",
+    "vue": "^2.6.14",
+    "whatwg-fetch": "^3.6.20",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@tailwindcss/typography": "^0.5.19",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.5.0",
+    "electron": "^34.3.0",
+    "electron-builder": "^26.0.12",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^3.4.19",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "build": {
+    "appId": "com.llm.wenda.page",
+    "productName": "ModelTap",
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "signAndEditExecutable": true,
+      "requestedExecutionLevel": "requireAdministrator",
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "build/icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "dmg": {
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "perMachine": false,
+      "selectPerMachineByDefault": false,
+      "artifactName": "${productName}-${version}.${ext}"
+    }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "ie 11"
+  ]
+}
